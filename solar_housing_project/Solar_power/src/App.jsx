@@ -7,7 +7,7 @@ import SelectRadius from './components/SelectRadius';
 
 function App() {
   const [location, setLocation] = useState(null);
-  const [radius, setRadius] = useState(5); // <-- Add this line
+  const [radius, setRadius] = useState(5); 
 
   const handleSearch = async (searchTerm) => {
     try {
