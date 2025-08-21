@@ -1,7 +1,9 @@
 import './App.css'
 import Title from './components/title'
-import Navbar from './components/navbar'
 import AboutUs from './components/about_us'
+import ContactUs from './components/contact_us'
+import Results from "./components/results"
+import Legends from "./components/legends"
 
 function App() {
   
@@ -9,9 +11,11 @@ function App() {
   return (
     <>
     <Title></Title>
-    <Navbar></Navbar>
-
+    <Results></Results>
+    <Legends></Legends>
     <AboutUs></AboutUs>
+    <ContactUs></ContactUs>
+    
     
     </>
   )

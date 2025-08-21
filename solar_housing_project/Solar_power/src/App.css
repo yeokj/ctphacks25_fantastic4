@@ -1,0 +1,37 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Eurostile', sans-serif;
+}
+
+h1 {
+    color: rgb(0, 150, 255);
+    text-align: center;
+}
+
+h3 {
+    color: rgb(0, 150, 255);
+}
+
+p {
+    color: rgb(0, 150, 255);
+}
+
+.about {
+   
+}
+
+.contact {
+   
+}
+
+.green_legend {
+    color: green;
+}
+
+.yellow_legend {
+    color: rgb(233, 233, 12);
+}
+
+.red_legend {
+    color: red;
+}

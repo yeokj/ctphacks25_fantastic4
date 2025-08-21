@@ -1,7 +1,7 @@
 const Title = () => {
 
     return(
-        <title>Solar Energy Housing</title>
+        <h1>Sunny Housing</h1>
     )
 }
 export default Title; 
