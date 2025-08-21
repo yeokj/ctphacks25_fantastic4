@@ -10,7 +10,7 @@ function App() {
   
   const handleSearch = async (searchTerm) => {
     try {
-      const apiKey = 'YOUR_OPENCAGE_API_KEY'; //CHANGE YOUR_OPENCAGE_API_KEY to actual key
+      const apiKey = 'aDbZPhVJ-WCBKef9CkpQf5jyTn4'; 
       const response = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(searchTerm)}&key=${apiKey}&countrycode=us&bounds=-79.76,40.50,-71.86,45.01`);
       const data = await response.json();
 
