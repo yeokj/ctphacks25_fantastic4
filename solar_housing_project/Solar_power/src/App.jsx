@@ -7,7 +7,8 @@ import SelectRadius from './components/SelectRadius';
 
 function App() {
   const [location, setLocation] = useState(null);
-  
+  const [radius, setRadius] = useState(5); // <-- Add this line
+
   const handleSearch = async (searchTerm) => {
     try {
       const apiKey = 'aDbZPhVJ-WCBKef9CkpQf5jyTn4'; 
@@ -24,12 +25,12 @@ function App() {
       console.error('Error fetching location data:', error);
     }
   };
-  
+
   return (
     <>
-    <SearchBar onSearch={handleSearch} />
-    <Map location={location} />
-    <SelectRadius
+      <SearchBar onSearch={handleSearch} />
+      <Map location={location} />
+      <SelectRadius
         selectedRadius={radius}
         onRadiusChange={setRadius}
       />
