@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react'; 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'; 
 
-const Map = () => {
+const UpdateMapView = ({ location }) => {
+  const map = useMap();
+  useEffect(() => {
+    if (location) {
+      map.setView([location.lat, location.lng], map.getZoom());
+    }
+  }, [location, map]);
+  return null;
+};
 
+const Map = ({ location }) => {
   const nycPosition = [40.7128, -74.0060];
-  
   const zoomLevel = 7; 
 
-  return (
+return (
     <MapContainer 
       center={nycPosition} 
       zoom={zoomLevel} 
-      scrollWheelZoom={false} 
+      scrollWheelZoom={true} 
       style={{ height: '500px', width: '100%' }}
     >
       <TileLayer
@@ -20,11 +28,15 @@ const Map = () => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       
-      <Marker position={nycPosition}>
-        <Popup>
-          New York City
-        </Popup>
-      </Marker>
+      {}
+      <UpdateMapView location={location} />
+      
+      {}
+      {location && (
+        <Marker position={[location.lat, location.lng]}>
+          <Popup>You searched for this location.</Popup>
+        </Marker>
+      )}
     </MapContainer>
   );
 };
