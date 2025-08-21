@@ -1,0 +1,12 @@
+{
+  "name": "ctphacks25_fantastic4",
+  "version": "1.0.0",
+  "description": "For CUNY Tech Prep's Hackathon, we (The Fantastic Four) will create a project like no has ever seen before.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
