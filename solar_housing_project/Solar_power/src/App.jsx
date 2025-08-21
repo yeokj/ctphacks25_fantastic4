@@ -13,6 +13,7 @@ function App() {
       const apiKey = 'aDbZPhVJ-WCBKef9CkpQf5jyTn4'; 
       const response = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(searchTerm)}&key=${apiKey}&countrycode=us&bounds=-79.76,40.50,-71.86,45.01`);
       const data = await response.json();
+      const radius = 5;
 
       if (data.results && data.results.length > 0) {
         const { lat, lng } = data.results[0].geometry;
