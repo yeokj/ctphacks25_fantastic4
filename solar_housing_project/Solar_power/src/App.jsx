@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SearchBar from './components/search_bar.jsx';
+import SearchBar from './components/SearchBar.jsx';
 import Map from './components/Map.jsx';
 
 function App() {
