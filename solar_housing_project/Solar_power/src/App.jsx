@@ -1,12 +1,10 @@
 import './App.css'
-import Button from './components/Button'
+import Test from './components/Test'  // Import your solar dashboard component
 
 function App() {
-  
-
   return (
     <>
-    <Button></Button>
+      <Test />  {/* Render your solar dashboard */}
     </>
   )
 }
