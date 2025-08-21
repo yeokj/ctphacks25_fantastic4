@@ -1,12 +1,18 @@
 import './App.css'
-import Button from './components/Button'
+import Title from './components/title'
+import Navbar from './components/navbar'
+import AboutUs from './components/about_us'
 
 function App() {
   
 
   return (
     <>
-    <Button></Button>
+    <Title></Title>
+    <Navbar></Navbar>
+
+    <AboutUs></AboutUs>
+    
     </>
   )
 }
