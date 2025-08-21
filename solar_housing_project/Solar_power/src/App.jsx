@@ -3,6 +3,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchBar from './components/SearchBar.jsx';
 import Map from './components/Map.jsx';
+import SelectRadius from './components/SelectRadius';
 
 function App() {
   const [location, setLocation] = useState(null);
@@ -28,6 +29,10 @@ function App() {
     <>
     <SearchBar onSearch={handleSearch} />
     <Map location={location} />
+    <SelectRadius
+        selectedRadius={radius}
+        onRadiusChange={setRadius}
+      />
     </>
   );
 }
