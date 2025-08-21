@@ -28,9 +28,9 @@ function App() {
 
   return (
     <>
-      <SearchBar onSearch={handleSearch} />
-      <Map location={location} />
-      <SelectRadius
+    <SearchBar onSearch={handleSearch} />
+    <Map location={location} />
+    <SelectRadius
         selectedRadius={radius}
         onRadiusChange={setRadius}
       />

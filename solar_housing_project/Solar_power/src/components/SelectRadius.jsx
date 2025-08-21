@@ -18,7 +18,7 @@ const SelectRadius = ({ onRadiusChange, selectedRadius }) => {
         {}
         {radiusOptions.map(radius => (
           <option key={radius} value={radius}>
-            {radius} miles
+            {radius} 
           </option>
         ))}
       </select>
